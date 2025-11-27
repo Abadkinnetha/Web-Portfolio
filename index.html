@@ -1,0 +1,740 @@
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://i.postimg.cc/9fqYVvxh/logo.png" type="image/x-icon">
+    
+    <!-- SVG Filters for Electric Border Effect -->
+    <svg style="display: none;">
+        <defs>
+            <filter id="turbulent-displace" colorInterpolationFilters="sRGB" x="-20%" y="-20%" width="140%" height="140%">
+                <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="4" result="noise" seed="1" />
+                <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G" />
+            </filter>
+        </defs>
+    </svg>
+</head>
+<body>
+    <main>
+        <aside class="sidebar " data-sidebar>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="assets/Formal.jpg" alt="avatar" width="80">
+                </figure>
+
+                <div class="info-content">
+                    <h1 class="name" title="Kinneth Abad">Kinneth Abad</h1>
+                    <p class="title">Web Developer / IT Specialist</p>
+                </div>
+
+                <button class="info-more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+            </div>
+
+            <div class="sidebar-info-more">
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+
+                            <a href="mailto:abadkinnetha@gmail.com" class="contact-link">abadkinnetha@gmail.com</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+
+                            <a href="tel:+639959956573" class="contact-link">+639959956573</a>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Birthday</p>
+
+                            <time datetime="1982-06-23">October 10, 1997</time>
+                        </div>
+                    </li>
+
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+
+                            <address>Caloocan City, Philippines</address>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+                    <li class="social-item"><a href="https://www.facebook.com/MrChase0" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://twitter.com/MrChase0" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li class="social-item"><a href="https://www.instagram.com/MrChase0" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Blog</button></li>
+                    <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+                </ul>
+            </nav>
+
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+                <div class="about-me">
+                <section class="about-text">
+                    <p>I’m an IT Professional and Web Developer from Caloocan City, Philippines. I have experience in web development, database management, computer networking, and technical support, using AI-powered tools to enhance development efficiency and maintain best security practices.</p>
+                    <p>I also manage ABD Laptop & Desktop Computer Services, providing affordable repair and IT solutions to local clients. My goal is to continue growing as a developer and IT specialist, delivering reliable and innovative technology solutions.</p>
+                </section>
+                </div>
+
+                <section class="service">
+                    <h3 class="h3 service-title">What I'm doing</h3>
+
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="electric-border"></div>
+                            <div class="glow-1"></div>
+                            <div class="glow-2"></div>
+                            <div class="background-glow"></div>
+                            <div class="service-icon-box">
+                                <img src="assets/Web_Ui.png" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Web Design</h4>
+                                <p class="service-item-text">Creative and Modern Web Design Solutions.</p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="electric-border"></div>
+                            <div class="glow-1"></div>
+                            <div class="glow-2"></div>
+                            <div class="background-glow"></div>
+                            <div class="service-icon-box">
+                                <img src="assets/Web_Dev.png" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Web development</h4>
+                                <p class="service-item-text">Fast, Reliable and efficient web development with Ai tools.</p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="electric-border"></div>
+                            <div class="glow-1"></div>
+                            <div class="glow-2"></div>
+                            <div class="background-glow"></div>
+                            <div class="service-icon-box">
+                                <img src="assets/repair_lp.png" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Repair</h4>
+                                <p class="service-item-text">Advance to Board level repair services for gadgets, laptops and desktops.</p>
+                            </div>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="electric-border"></div>
+                            <div class="glow-1"></div>
+                            <div class="glow-2"></div>
+                            <div class="background-glow"></div>
+                            <div class="service-icon-box">
+                                <img src="assets/home_lab.png" alt="icon" width="40">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Home Network Lab</h4>
+                                <p class="service-item-text">Setup and configuration of office and home network systems.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                
+
+                <div class="modal-container " data-modal-container>
+                    <div class="overlay " data-overlay></div>
+
+                    <section class="testimonials-modal">
+                        <button class="modal-close-btn" data-modal-close-btn><ion-icon name="close-outline"></ion-icon></button>
+
+                        <div class="modal-img-wrapper">
+                            <figure class="modal-avatar-box">
+                                <img src="assets/Formal.jpg" alt="Kinneth Abad" data-modal-img>
+
+                            </figure>
+                        </div>
+                    </section>
+                </div>
+
+                <section class="clients">
+                    <h3 class="h3 clients-title">Techstacks and Tools</h3>
+
+                    <ul class="clients-list has-scrollbar">
+                        <li class="clients-item">
+                            <a href="#"><img src="assets/techstack/pngegg.png" alt="logo"></a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="#"><img src="assets/techstack/icon_postgre.png" alt="logo"></a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="#"><img src="assets/techstack/icon_mysql.png" alt="logo"></a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="#"><img src="assets/techstack/isp_RT809F.png" alt="logo"></a>
+                        </li>
+
+                        <li class="clients-item">
+                            <a href="#"><img src="assets/techstack/smd_works.png" alt="logo"></a>
+                        </li>
+                    </ul>
+                </section>
+
+            </article>
+            
+            <article class="resume " data-page="resume">
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+
+                        <h3 class="h3">Education</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">ICCT Colleges Cainta Campus</h4>
+                            <span>2015 - 2023</span>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Eusebio High School</h4>
+                            <span>2011 - 2015</span>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Napico Elementary School</h4>
+                            <span>2006 - 2011</span>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="timeline">
+                    <div class="title-wrapper">
+                        <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+
+                        <h3 class="h3">Experience</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+                        <li class="timeline-item">
+                            <h1 class="h4 timeline-item-title">National Printing Office - Quezon City</h4>
+                            <h3 class="h4 timeline-item-title">Computer Programmer 1</h4>
+                            <span>2024 - 2025</span>
+                            <p class="timeline-text">Developed, tested, and maintained Web based application.
+                            <br>Database management, ensuring data integrity and consistency.
+                            <br>Prepared technical documentation, manuals, and user reference guides.
+                            <br>Provided technical assistance and training to system end-users.
+                            <br>Participated in debugging, version control, and system enhancement processes.</p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h1 class="h4 timeline-item-title">National Printing Office - Quezon City</h1>
+                            <h3 class="h4 timeline-item-title">Computer Maintenance Technologist 1</h3>
+                            <span>2024 - 2024</span>
+                            <p class="timeline-text">Designed and implemented optimized network topologies using Cisco Packet Tracer.
+                            <br>Configured VLANs and installed access points to improve network security and efficiency.
+                            <br>Performed ICT equipment maintenance, inventory, and asset tracking.
+                            <br>Installed and configured VOIP systems and managed structured cabling.
+                            <br>Delivered remote and on-site IT support for multiple departments.</p>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h1 class="h4 timeline-item-title">ABD Laptop and Desktop Computer Services - Caloocan City</h1>
+                            <h4 class="h4 timeline-item-title">Computer Technician </h4>
+                            <span>2015 - 2024</span>
+                            <p class="timeline-text">
+                            Diagnosed and repaired hardware issues in desktops, laptops, and peripherals.
+                            <br>Performed BIOS re-flashing, firmware updates, and component-level repairs.
+                            <br>Conducted data recovery using specialized tools and utilities.
+                            <br>Upgraded systems and improved overall device performance.</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="skill">
+                    <h3 class="h3 skills-title">My Skills</h3>
+
+                    <ul class="skills-list content-card">
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Web Design & Development</h5>
+                                <data value="79">79%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 79%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">PostgreSQL & MySql</h5>
+                                <data value="70">70%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 70%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Networking</h5>
+                                <data value="79">79%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 79%;"></div>
+                            </div>
+                        </li>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Vibe Coding</h5>
+                                <data value="96">96%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 96%;"></div>
+                            </div>
+
+                        <li class="skills-item">
+                            <div class="title-wrapper">
+                                <h5 class="h5">Hardware Repairs</h5>
+                                <data value="96">96%</data>
+                            </div>
+
+                            <div class="skills-progress-bg">
+                                <div class="skills-progress-fill" style="width: 96%;"></div>
+                            </div>
+                        </li>   
+                    </ul>
+                </section>
+            </article>
+
+            <article class="portfolio " data-page="portfolio">
+                <header>
+                    <h2 class="h2 article-title">Portfolio</h2>
+                </header>
+
+                <section class="projects">
+                    <ul class="filter-list">
+                        <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+                        <li class="filter-item"><button data-filter-btn>Networking</button></li>
+                        <li class="filter-item"><button data-filter-btn>Hardware Repairs</button></li>
+                        <li class="filter-item"><button data-filter-btn>Web Designs & Development</button></li>
+                    </ul>
+
+                    <div class="filter-select-box">
+                        <button class="filter-select " data-select>
+                            <div class="select-value" data-select-value>Select Category</div>
+
+                            <div class="select-icon">
+                                <ion-icon name="chevron-down"></ion-icon>
+                            </div>
+                        </button>
+
+                        <ul class="select-list">
+                            <li class="select-item"><button data-select-item>All</button></li>
+                            <li class="select-item"><button data-select-item>Networking</button></li>
+                            <li class="select-item"><button data-select-item>Hardware Repairs</button></li>
+                            <li class="select-item"><button data-select-item>Web Designs & Development</button></li>
+                        </ul>
+                    </div>
+
+                    <ul class="project-list">
+                        <li class="project-item active" data-filter-item data-category="Web Designs & Development">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="assets/SaaS.jpg" alt="x-icon" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Digital Library</h3>
+                                <p class="project-category">Web</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="Web Designs & Development">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="assets/asset_inventory.png" alt="x-icon" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Asset Inventory</h3>
+                                <p class="project-category">Web</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="Web Designs & Development">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="assets/loca_streaming.png" alt="x-icon" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Home Flix</h3>
+                                <p class="project-category">Web</p>
+                            </a>
+                        </li>
+                        <!-- packet-tracer images -->
+                        <li class="project-item active" data-filter-item data-category="Networking">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="assets/packetracer.png" alt="x-icon" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Small Office Network Topology</h3>
+                                <p class="project-category">Packet Tracer</p>
+                            </a>
+                        </li>
+
+                        <!-- Repairs images from assets/repairs -->
+                        <li class="project-item active" data-filter-item data-category="Hardware Repairs">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="assets/repairs/20241124_180348.jpg" alt="repair-1" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Repair 20241124</h3>
+                                <p class="project-category">Hardware Repairs</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="Hardware Repairs">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="assets/repairs/20250826_113807.jpg" alt="repair-2" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Repair 20250826</h3>
+                                <p class="project-category">Hardware Repairs</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="Hardware Repairs">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="assets/repairs/20250827_104049.jpg" alt="repair-3" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Repair 20250827</h3>
+                                <p class="project-category">Hardware Repairs</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="Hardware Repairs">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="assets/repairs/20250922_084640.jpg" alt="repair-4" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Repair 20250922</h3>
+                                <p class="project-category">Hardware Repairs</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="Hardware Repairs">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="assets/repairs/20251108_071116.jpg" alt="repair-5" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Repair 20251108</h3>
+                                <p class="project-category">Hardware Repairs</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="Hardware Repairs">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="assets/repairs/IMG20231014174922.jpg" alt="repair-6" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Repair IMG1</h3>
+                                <p class="project-category">Hardware Repairs</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="Hardware Repairs">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="assets/repairs/IMG20231014180135.jpg" alt="repair-7" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Repair IMG2</h3>
+                                <p class="project-category">Hardware Repairs</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="Hardware Repairs">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="assets/repairs/IMG20231014180357.jpg" alt="repair-8" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Repair IMG3</h3>
+                                <p class="project-category">Hardware Repairs</p>
+                            </a>
+                        </li>
+
+                        <li class="project-item active" data-filter-item data-category="Hardware Repairs">
+                            <a href="#">
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div>
+
+                                    <img src="assets/repairs/IMG20231102183941.jpg" alt="repair-9" loading="lazy">
+                                </figure>
+
+                                <h3 class="project-title">Repair IMG4</h3>
+                                <p class="project-category">Hardware Repairs</p>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Lightbox Modal -->
+                <div class="lightbox-container" data-lightbox-container>
+                    <div class="lightbox-overlay" data-lightbox-overlay></div>
+                    <section class="lightbox-modal">
+                        <button class="lightbox-close-btn" data-lightbox-close-btn>
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+                        <figure class="lightbox-img-wrapper">
+                            <img src="" alt="project-image" data-lightbox-img>
+                        </figure>
+                        <div class="lightbox-content">
+                            <h3 class="h3" data-lightbox-title></h3>
+                            <p data-lightbox-category></p>
+                        </div>
+                    </section>
+                </div>
+            </article>
+
+            <article class="blog " data-page="blog">
+                <header>
+                    <h2 class="h2 article-title">Online Business</h2>
+                </header>
+
+                <section class="blog-posts">
+                    <ul class="blog-posts-list">
+                        <li class="blog-post-item">
+                            <a href="#">
+                                    <figure class="blog-banner-box">
+                                        <img src="assets/ecom_profile.png" alt="Design conferences in 2024" loading="lazy">
+                                    </figure>
+
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">E-Commerence Profile</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2024-01-01">2024</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">Customer Feedback</h3>
+                                    <p class="blog-text">Collecting customer feedback is essential for improving products and services.</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="blog-post-item">
+                            <a href="#">
+                                    <figure class="blog-banner-box">
+                                        <img src="assets/page.png" alt="Top 10 E-Commerce Trends to Watch in 2024" loading="lazy">
+                                    </figure>
+
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Online Store</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2024-02-15">2024</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">ABD Laptop & Desktop Services</h3>
+                                    <p class="blog-text">Offers laptop and desktop repair services, including hardware upgrades and software installations and parts.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="blog-post-item">
+                            <a href="#">
+                                    <figure class="blog-banner-box">
+                                        <img src="assets/group.png" alt="Design conferences in 2024" loading="lazy">
+                                    </figure>
+
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <p class="blog-category">Manage Public Group</p>
+                                        <span class="dot"></span>
+                                        <time datetime="2024-01-01">2024</time>
+                                    </div>
+
+                                    <h3 class="h3 blog-item-title">Buy & Sell Group</h3>
+                                    <p class="blog-text">A public facebook group where possible buyer or seller can post their inquiries and offers.</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                
+                <!-- Lightbox Modal for Blog Posts -->
+                <div class="blog-lightbox-container" data-blog-lightbox-container>
+                    <div class="blog-lightbox-overlay" data-blog-lightbox-overlay></div>
+                    <section class="blog-lightbox-modal">
+                        <button class="blog-lightbox-close-btn" data-blog-lightbox-close-btn>
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+                        <figure class="blog-lightbox-img-wrapper">
+                            <img src="" alt="blog-image" data-blog-lightbox-img>
+                        </figure>
+                        <div class="blog-lightbox-content">
+                            <h3 class="h3" data-blog-lightbox-title></h3>
+                            <p class="blog-lightbox-category" data-blog-lightbox-category></p>
+                            <time data-blog-lightbox-date></time>
+                            <p class="blog-lightbox-text" data-blog-lightbox-text></p>
+                        </div>
+                    </section>
+                </div>
+            </article>
+
+            <article class="contact " data-page="contact">
+                <header>
+                    <h2 class="h2 article-title">Contact</h2>
+                </header>
+
+                <section class="mapbox" data-mapbox>
+                    <figure>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.0678619750893!2d121.05471047684607!3d14.765206773021905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397af03a970f153%3A0xc583988c787cd657!2sABD%20Laptop%20%26%20Desktop%20Services!5e0!3m2!1sen!2sph!4v1764224107903!5m2!1sen!2sph"
+                         width="400" height="300" loading="lazy"></iframe>
+                    </figure>
+                </section>
+
+                <section class="contact-form">
+                    <h3 class="h3 form-title">Contact Form</h3>
+
+                    <form action="#" class="form" data-form>
+                        <div class="input-wrapper">
+                            <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+                            <input type="email" name="email" class="form-input" placeholder="Email Address" required data-form-input>
+                        </div>
+
+                        <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input=""></textarea>
+
+                        <button class="form-btn" type="submit" disabled data-form-btn>
+                            <ion-icon name="paper-plane"></ion-icon>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
